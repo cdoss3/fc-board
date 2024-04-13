@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://c8s5qrhy1uxwo"]
+
+[ext_resource type="Texture2D" uid="uid://bl1aek7n3va8y" path="res://vector-soccer-field.png" id="1_qjk7v"]
+[ext_resource type="Texture2D" uid="uid://de2uajha5jdah" path="res://graphics/red_dot.png" id="2_wu7o3"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Vector-soccer-field" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("1_qjk7v")
+
+[node name="RedDot" type="Sprite2D" parent="."]
+position = Vector2(1341, 192)
+scale = Vector2(0.145, 0.145)
+texture = ExtResource("2_wu7o3")
