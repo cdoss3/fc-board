@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dm1dp5s33sp4e"]
+
+[ext_resource type="Texture2D" uid="uid://bl1aek7n3va8y" path="res://vector-soccer-field.png" id="1_q3nb7"]
+
+[node name="background" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("1_q3nb7")
