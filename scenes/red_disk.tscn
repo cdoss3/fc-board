@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dgw6ybbyqj83r"]
+
+[ext_resource type="Texture2D" uid="uid://de2uajha5jdah" path="res://graphics/red_dot.png" id="1_0ot54"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_p6cr0"]
+radius = 115.213
+
+[node name="RedDisk" type="Area2D"]
+scale = Vector2(0.15, 0.15)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_0ot54")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_p6cr0")

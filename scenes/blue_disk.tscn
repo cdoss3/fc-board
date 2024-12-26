@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://iwww7nbyqpf7"]
+
+[node name="BlueDisk" type="CharacterBody2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
