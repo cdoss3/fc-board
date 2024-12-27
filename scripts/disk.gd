@@ -12,8 +12,10 @@ func get_distance(a: Vector2, b: Vector2):
 func toggle_selected():
 	if selected == false:
 		selected = true
+		modulate = Color(1.5, 1.5, 1.5)
 	else:
 		selected = false
+		modulate = Color(1, 1, 1)
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
