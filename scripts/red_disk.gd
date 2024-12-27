@@ -1,7 +1,8 @@
 extends CharacterBody2D
 
-var speed = 10
-var destination = position
+var speed: int = 10
+var destination: Vector2 = position
+var selected: bool = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

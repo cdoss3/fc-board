@@ -1,13 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://c2wkxkmr7rai1"]
+[gd_scene load_steps=3 format=3 uid="uid://c2wkxkmr7rai1"]
 
 [ext_resource type="PackedScene" uid="uid://dm1dp5s33sp4e" path="res://background.tscn" id="1_h8v37"]
-[ext_resource type="PackedScene" uid="uid://dgw6ybbyqj83r" path="res://scenes/red_disk.tscn" id="2_xusar"]
-[ext_resource type="Script" path="res://scenes/red_disk.gd" id="3_5j2en"]
+[ext_resource type="PackedScene" uid="uid://jy2ksiptdm5o" path="res://scenes/RedDiskv2.tscn" id="4_rcdmk"]
 
 [node name="Main" type="Node"]
 
 [node name="Background" parent="." instance=ExtResource("1_h8v37")]
 
-[node name="RedDisk" parent="." instance=ExtResource("2_xusar")]
-position = Vector2(448, 195)
-script = ExtResource("3_5j2en")
+[node name="RedDisk1" parent="." instance=ExtResource("4_rcdmk")]
+position = Vector2(449, 416)
+
+[node name="RedDisk2" parent="." instance=ExtResource("4_rcdmk")]
+position = Vector2(470, 225)
