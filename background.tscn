@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/background.gd" id="1_jp45x"]
 [ext_resource type="Texture2D" uid="uid://bl1aek7n3va8y" path="res://vector-soccer-field.png" id="1_q3nb7"]
-[ext_resource type="PackedScene" uid="uid://jy2ksiptdm5o" path="res://scenes/RedDiskv2.tscn" id="2_ckstm"]
+[ext_resource type="PackedScene" uid="uid://jy2ksiptdm5o" path="res://scenes/Disk.tscn" id="2_ckstm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fmjpb"]
 size = Vector2(1920, 1080)

@@ -4,6 +4,7 @@ var speed: int = 10
 var destination: Vector2 = position
 var selected: bool = false
 var color: String = "RED"
+var player_name: String = "TEST_PLAYER"
 
 func get_distance(a: Vector2, b: Vector2):
 	return sqrt((a.x - b.x)**2 + (a.y - b.y)**2)
@@ -19,6 +20,8 @@ func toggle_selected():
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	if player_name:
+		get_node("PlayerName").text = player_name
 	destination = position
 	pass # Replace with function body.
 
