@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://dm1dp5s33sp4e"]
 
 [ext_resource type="Script" path="res://scripts/background.gd" id="1_jp45x"]
-[ext_resource type="Texture2D" uid="uid://bl1aek7n3va8y" path="res://vector-soccer-field.png" id="1_q3nb7"]
+[ext_resource type="Texture2D" uid="uid://bl1aek7n3va8y" path="res://graphics/vector-soccer-field.png" id="1_q3nb7"]
 [ext_resource type="PackedScene" uid="uid://jy2ksiptdm5o" path="res://scenes/Disk.tscn" id="2_ckstm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fmjpb"]

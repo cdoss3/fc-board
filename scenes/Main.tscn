@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://c2wkxkmr7rai1"]
+
+[ext_resource type="PackedScene" uid="uid://dm1dp5s33sp4e" path="res://scenes/Background.tscn" id="1_uoffv"]
+[ext_resource type="PackedScene" uid="uid://8vmyw1ef2ts5" path="res://scenes/NameEntry.tscn" id="2_ppnqe"]
+
+[node name="Main" type="Node"]
+
+[node name="Background" parent="." instance=ExtResource("1_uoffv")]
+menu_scene = ExtResource("2_ppnqe")

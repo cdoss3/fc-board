@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bl1aek7n3va8y"
-path="res://.godot/imported/vector-soccer-field.png-395c0c348ac8b161a2fe09228e40b123.ctex"
+path="res://.godot/imported/vector-soccer-field.png-2f3f2156cf491f8d1ba53d6d79815fcd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://vector-soccer-field.png"
-dest_files=["res://.godot/imported/vector-soccer-field.png-395c0c348ac8b161a2fe09228e40b123.ctex"]
+source_file="res://graphics/vector-soccer-field.png"
+dest_files=["res://.godot/imported/vector-soccer-field.png-2f3f2156cf491f8d1ba53d6d79815fcd.ctex"]
 
 [params]
 
