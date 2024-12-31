@@ -7,7 +7,7 @@ var destination: Vector2 = position
 # Boolean
 var selected: bool = false
 # Traits
-var color: String = "BLUE"
+var color: String = "RED"
 var player_name: String
 # Load textures
 var red_sprite: Texture2D = preload('res://graphics/red_dot.svg')
