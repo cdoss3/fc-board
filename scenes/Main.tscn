@@ -9,82 +9,82 @@
 [node name="Background" parent="." instance=ExtResource("1_uoffv")]
 menu_scene = ExtResource("2_ppnqe")
 
-[node name="Disk" parent="Background" instance=ExtResource("3_4g7od")]
+[node name="Disk" parent="Background" groups=["red_disks"] instance=ExtResource("3_4g7od")]
 position = Vector2(402, 432)
 color = "RED"
 
-[node name="Disk2" parent="Background" instance=ExtResource("3_4g7od")]
+[node name="Disk2" parent="Background" groups=["red_disks"] instance=ExtResource("3_4g7od")]
 position = Vector2(398, 613)
 color = "RED"
 
-[node name="Disk3" parent="Background" instance=ExtResource("3_4g7od")]
+[node name="Disk3" parent="Background" groups=["red_disks"] instance=ExtResource("3_4g7od")]
 position = Vector2(435, 820)
 color = "RED"
 
-[node name="Disk4" parent="Background" instance=ExtResource("3_4g7od")]
+[node name="Disk4" parent="Background" groups=["red_disks"] instance=ExtResource("3_4g7od")]
 position = Vector2(450, 201)
 color = "RED"
 
-[node name="Disk5" parent="Background" instance=ExtResource("3_4g7od")]
+[node name="Disk5" parent="Background" groups=["red_disks"] instance=ExtResource("3_4g7od")]
 position = Vector2(549, 433)
 color = "RED"
 
-[node name="Disk6" parent="Background" instance=ExtResource("3_4g7od")]
+[node name="Disk6" parent="Background" groups=["red_disks"] instance=ExtResource("3_4g7od")]
 position = Vector2(551, 613)
 color = "RED"
 
-[node name="Disk7" parent="Background" instance=ExtResource("3_4g7od")]
+[node name="Disk7" parent="Background" groups=["red_disks"] instance=ExtResource("3_4g7od")]
 position = Vector2(686, 517)
 color = "RED"
 
-[node name="Disk8" parent="Background" instance=ExtResource("3_4g7od")]
+[node name="Disk8" parent="Background" groups=["red_disks"] instance=ExtResource("3_4g7od")]
 position = Vector2(810, 816)
 color = "RED"
 
-[node name="Disk9" parent="Background" instance=ExtResource("3_4g7od")]
+[node name="Disk9" parent="Background" groups=["red_disks"] instance=ExtResource("3_4g7od")]
 position = Vector2(936, 533)
 color = "RED"
 
-[node name="Disk10" parent="Background" instance=ExtResource("3_4g7od")]
+[node name="Disk10" parent="Background" groups=["red_disks"] instance=ExtResource("3_4g7od")]
 position = Vector2(795, 203)
 color = "RED"
 
-[node name="Disk11" parent="Background" instance=ExtResource("3_4g7od")]
+[node name="Disk11" parent="Background" groups=["blue_disks"] instance=ExtResource("3_4g7od")]
 position = Vector2(1550, 541)
 color = "BLUE"
 
-[node name="Disk12" parent="Background" instance=ExtResource("3_4g7od")]
+[node name="Disk12" parent="Background" groups=["blue_disks"] instance=ExtResource("3_4g7od")]
 position = Vector2(1547, 418)
 color = "BLUE"
 
-[node name="Disk13" parent="Background" instance=ExtResource("3_4g7od")]
+[node name="Disk13" parent="Background" groups=["blue_disks"] instance=ExtResource("3_4g7od")]
 position = Vector2(1549, 674)
 color = "BLUE"
 
-[node name="Disk14" parent="Background" instance=ExtResource("3_4g7od")]
+[node name="Disk14" parent="Background" groups=["blue_disks"] instance=ExtResource("3_4g7od")]
 position = Vector2(1398, 850)
 color = "BLUE"
 
-[node name="Disk15" parent="Background" instance=ExtResource("3_4g7od")]
+[node name="Disk15" parent="Background" groups=["blue_disks"] instance=ExtResource("3_4g7od")]
 position = Vector2(1389, 206)
 color = "BLUE"
 
-[node name="Disk16" parent="Background" instance=ExtResource("3_4g7od")]
+[node name="Disk16" parent="Background" groups=["blue_disks"] instance=ExtResource("3_4g7od")]
 position = Vector2(1392, 459)
 color = "BLUE"
 
-[node name="Disk17" parent="Background" instance=ExtResource("3_4g7od")]
+[node name="Disk17" parent="Background" groups=["blue_disks"] instance=ExtResource("3_4g7od")]
 position = Vector2(1396, 603)
 color = "BLUE"
 
-[node name="Disk18" parent="Background" instance=ExtResource("3_4g7od")]
+[node name="Disk18" parent="Background" groups=["blue_disks"] instance=ExtResource("3_4g7od")]
 position = Vector2(1291, 600)
 color = "BLUE"
 
-[node name="Disk19" parent="Background" instance=ExtResource("3_4g7od")]
+[node name="Disk19" parent="Background" groups=["blue_disks"] instance=ExtResource("3_4g7od")]
 position = Vector2(1290, 462)
 color = "BLUE"
 
-[node name="Disk20" parent="Background" instance=ExtResource("3_4g7od")]
+[node name="Disk20" parent="Background" groups=["blue_disks"] instance=ExtResource("3_4g7od")]
 position = Vector2(1140, 526)
 color = "BLUE"

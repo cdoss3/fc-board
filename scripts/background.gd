@@ -9,6 +9,7 @@ func _process(_delta: float):
 	# Input to instantiate new red disk
 	if Input.is_action_just_pressed("place_red_disk"):
 		var disk_instance = disk_scene.instantiate()
+		disk_instance.add_to_group("red_disks")
 		disk_instance.position = get_local_mouse_position()
 		disk_instance.color = "RED"
 		add_child(disk_instance)
@@ -17,6 +18,7 @@ func _process(_delta: float):
 	# Input to instantiate new blue disk
 	if Input.is_action_just_pressed("place_blue_disk"):
 		var disk_instance = disk_scene.instantiate()
+		disk_instance.add_to_group("blue_disks")
 		disk_instance.position = get_local_mouse_position()
 		disk_instance.color = "BLUE"
 		add_child(disk_instance)

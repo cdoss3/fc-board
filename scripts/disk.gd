@@ -12,7 +12,6 @@ var player_name: String
 # Load textures
 var red_sprite: Texture2D = preload('res://graphics/red_dot.svg')
 var blue_sprite: Texture2D = preload("res://graphics/blue_dot.png")
-var unfound_sprite: Texture2D = preload("res://icon.svg")
 
 ## USER-DEFINED FUNCTIONS
 # Measure linear distance between two points
@@ -45,8 +44,6 @@ func _ready() -> void:
 	# Blue disk
 	elif color == "BLUE":
 		change_sprite(blue_sprite)
-	else:
-		change_sprite(unfound_sprite)
 
 ## HANDLE INPUTS
 func _input_event(_viewport, event, _shape_idx):
@@ -64,7 +61,7 @@ func _process(delta: float) -> void:
 	## Move selected disk
 	if selected and Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
 		destination = get_global_mouse_position()
-	if get_distance(position, destination) > 5:
+	if get_distance(position, destination) > 10:
 		var path: Vector2
 		path.x = destination.x - position.x
 		path.y = destination.y - position.y
