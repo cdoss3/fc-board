@@ -25,11 +25,13 @@ func change_sprite(sprite_path: Texture2D):
 
 # Toggle "selected" status
 func toggle_selected():
-	if selected == false:
+	if selected == false and get_tree().get_nodes_in_group("disk_selected").is_empty():
 		selected = true
+		self.add_to_group("disk_selected")
 		modulate = Color(2, 2, 2)
 	else:
 		selected = false
+		self.remove_from_group("disk_selected")
 		modulate = Color(1, 1, 1)
 
 ## READY
