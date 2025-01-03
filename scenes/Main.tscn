@@ -88,3 +88,23 @@ color = "BLUE"
 [node name="Disk20" parent="Background" groups=["blue_disks"] instance=ExtResource("3_4g7od")]
 position = Vector2(1140, 526)
 color = "BLUE"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 9
+anchor_bottom = 1.0
+grow_vertical = 2
+
+[node name="GrowDisks" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+theme_override_font_sizes/font_size = 52
+text = "+"
+
+[node name="ShrinkDisks" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+theme_override_font_sizes/font_size = 52
+text = "-"
+
+[connection signal="button_up" from="VBoxContainer/GrowDisks" to="Background" method="_on_grow_disks_button_up"]
+[connection signal="button_up" from="VBoxContainer/ShrinkDisks" to="Background" method="_on_shrink_disks_button_up"]
