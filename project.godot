@@ -29,6 +29,7 @@ window/stretch/mode="viewport"
 red_disks=""
 blue_disks=""
 disk_selected=""
+yellow_disks=""
 
 [input]
 

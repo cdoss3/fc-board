@@ -2,7 +2,7 @@ extends Area2D
 
 ## VARIABLES
 # Translation
-var speed: int = 10
+var speed: int = 6
 var destination: Vector2 = position
 # Boolean
 var selected: bool = false
@@ -10,8 +10,9 @@ var selected: bool = false
 @export var color: String
 var player_name: String
 # Load textures
-var red_sprite: Texture2D = preload('res://graphics/red_dot.svg')
-var blue_sprite: Texture2D = preload("res://graphics/blue_dot.png")
+const red_sprite: Texture2D = preload('res://graphics/red_dot.svg')
+const blue_sprite: Texture2D = preload("res://graphics/blue_dot.png")
+const yellow_sprite: Texture2D = preload("res://graphics/yellow_dot.png")
 
 ## USER-DEFINED FUNCTIONS
 # Measure linear distance between two points
@@ -46,14 +47,17 @@ func _ready() -> void:
 	# Blue disk
 	elif color == "BLUE":
 		change_sprite(blue_sprite)
+	# Yellow disk
+	elif color == "YELLOW":
+		change_sprite(yellow_sprite)
 
 ## HANDLE INPUTS
 func _input_event(_viewport, event, _shape_idx):
 	# Select disk with left click
-	if event.is_action_pressed("left_click"):
+	if event.is_action_released("left_click"):
 		toggle_selected()
 	# Open name-change LineEdit on input
-	if event.is_action_pressed("open_menu"):
+	if event.is_action_released("open_menu"):
 		$LineEdit.show()
 		$LineEdit.grab_focus()
 
@@ -63,8 +67,11 @@ func _process(delta: float) -> void:
 	## Move selected disk
 	if selected and Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
 		destination = get_global_mouse_position()
-	if get_distance(position, destination) > 10:
+		toggle_selected()
+
+	if position != destination:
 		var path: Vector2
+		
 		path.x = destination.x - position.x
 		path.y = destination.y - position.y
 

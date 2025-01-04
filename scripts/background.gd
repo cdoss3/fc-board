@@ -41,3 +41,8 @@ func _on_shrink_disks_button_up() -> void:
 		if disk is Area2D:
 			disk.scale -= Vector2(0.02, 0.02)
 	pass # Replace with function body.
+
+
+func _on_technical_area_area_entered(area: Area2D) -> void:
+	if area in get_children():
+		area.queue_free()

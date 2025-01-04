@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://dm1dp5s33sp4e"]
+[gd_scene load_steps=6 format=3 uid="uid://dm1dp5s33sp4e"]
 
 [ext_resource type="Script" path="res://scripts/background.gd" id="1_jp45x"]
 [ext_resource type="Texture2D" uid="uid://bl1aek7n3va8y" path="res://graphics/vector-soccer-field.png" id="1_q3nb7"]
@@ -6,6 +6,9 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fmjpb"]
 size = Vector2(1920, 1080)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s6qm3"]
+size = Vector2(256, 24)
 
 [node name="Background" type="Area2D"]
 script = ExtResource("1_jp45x")
@@ -18,3 +21,18 @@ texture = ExtResource("1_q3nb7")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(960, 540)
 shape = SubResource("RectangleShape2D_fmjpb")
+
+[node name="TechnicalArea" type="Area2D" parent="."]
+
+[node name="TechnicalAreaShape" type="CollisionShape2D" parent="TechnicalArea"]
+position = Vector2(960, 12)
+shape = SubResource("RectangleShape2D_s6qm3")
+
+[node name="ColorRect" type="ColorRect" parent="TechnicalArea"]
+offset_left = 832.0
+offset_right = 1088.0
+offset_bottom = 48.0
+mouse_filter = 2
+color = Color(0, 0, 0, 0.466667)
+
+[connection signal="area_entered" from="TechnicalArea" to="." method="_on_technical_area_area_entered"]

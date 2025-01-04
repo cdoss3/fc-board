@@ -89,6 +89,14 @@ color = "BLUE"
 position = Vector2(1140, 526)
 color = "BLUE"
 
+[node name="Disk21" parent="Background" groups=["yellow_disks"] instance=ExtResource("3_4g7od")]
+position = Vector2(1712, 536)
+color = "YELLOW"
+
+[node name="Disk22" parent="Background" groups=["yellow_disks"] instance=ExtResource("3_4g7od")]
+position = Vector2(216, 544)
+color = "YELLOW"
+
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 anchors_preset = 9
 anchor_bottom = 1.0
